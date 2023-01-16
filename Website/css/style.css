@@ -1,0 +1,1197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+ 
+/* font-family: 'Calistoga', cursive; */
+ 
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF4D1;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+ 
+.navbar-menu {
+    padding: 8px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    justify-content: space-between;
+}
+ 
+.navbar-menu .nav-link {
+    color: black;
+    font-weight: 500;
+}
+ 
+.navbar-menu .nav-link:hover {
+    color: orange;
+}
+
+.navbar-menu .nav-item.dropdown .dropdown-menu {
+    display: none; /* hide the dropdown menu by default */
+}
+
+.navbar-menu .nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* show the dropdown menu on hover */
+}
+/* Style the dropdown menu */
+.dropdown-menu {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+/* Style the dropdown menu items */
+.dropdown-item {
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+}
+/* Change the color of the dropdown menu items on hover */
+.dropdown-item:hover {
+    background-color: #ddd;
+    color: orange;
+}
+
+
+
+.container-fluid {
+    padding: 0;
+}
+ 
+.banner1 {
+    background-image: url(images/home-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 180px;
+    text-align: center;
+}
+ 
+.banner1 h1 {
+    font-size: 75px;
+    font-family: 'Calistoga', cursive;
+    color: #FFF4D1;
+    margin: 30px;
+    letter-spacing: 2px;
+    text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.377);
+}
+ 
+.banner2 {
+    background-image: url(images/main-bg.png);
+    background-size: contain;
+    background-repeat: repeat;
+    text-align: center;
+    padding: 36px;
+}
+ 
+.banner2 h1 {
+    margin: 10px 85px 0px 85px;
+    font-family: 'Calistoga', cursive;
+}
+
+.banner2 .logo {
+    margin: 36px;
+    height: 80px;
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.banner2 img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+ 
+.banner2 .text-desc {
+    padding: 84px;
+    text-align: justify;
+}
+ 
+.text-desc-ep {
+    padding: 84px;
+    padding-bottom: 0;
+    text-align: justify;
+}
+ 
+.text-desc-ep h4 {
+    margin-left: 0px;
+    margin-bottom: 36px;
+}
+ 
+.text-desc-ep p {
+    font-weight: 500;
+}
+
+.button-desc-ep .btn-se a:hover {
+    color: #fff;
+    border: 3px solid #5a9646;
+    box-shadow: 0px 2px 8px 2px #5a9646;
+    transform: translateY(0) scale(1.1);
+    transition: .5s;
+    background-color: #5a9646;
+}
+
+.button-desc-ep .btn-se a {
+    padding: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 3px solid #5a9646;
+    border-radius: 0;
+    box-shadow: 0px 2px 8px 1px #5a9646;
+    margin-top: 16px;
+    text-decoration: none;
+    color: #5a9646;
+}
+
+.button-desc-ep {
+    padding-left: 84px;
+    padding-right: 84px;
+    text-align: justify;
+}
+
+.btn-st a:hover {
+    color: #fff;
+    border: 2px solid #ea8d30;
+    box-shadow: 0px 2px 8px 2px #ea8d30;
+    transition: .5s;
+    background-color: #ea8d30;
+}
+
+.btn-st a {
+    text-decoration: none;
+    color: #ea8d30;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    padding: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 2px solid #ea8d30;
+    border-radius: 0;
+    box-shadow: 0px 0 15px 2px #ea8d30;
+}
+ 
+.banner3 {
+    background-image: url(images/home-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 55px;
+    text-align: center;
+}
+
+.banner3 h1 {
+    font-family: 'Calistoga', cursive;
+    color: #FFF4D1;
+    font-size: 50px;
+    text-shadow: 2px 1px 5px #000;
+}
+
+ 
+.banner3 .box {
+    padding: 36px;
+    text-align: left;
+    background-color: rgb(255, 249, 212);
+    border-radius: 36px;
+    height: 50vh;
+    width: 80%;
+    box-shadow: 0px 0 15px 2px #0c0c0cea;
+    border: none;
+    outline: none;
+    margin: 36px;
+}
+ 
+.box .box-title {
+    margin-bottom: 56px;
+}
+ 
+.banner4 {
+    background-image: url(images/main-bg.png);
+    background-size: contain;
+    background-repeat: repeat;
+    text-align: center;
+    padding: 36px;
+}
+ 
+.banner4 .title-desc {
+    padding: 54px;
+}
+ 
+.banner4 .title-desc {
+    font-family: 'Calistoga', cursive;
+}
+ 
+.banner4 .logos {
+    padding: 54px;
+    padding-top: 0;
+}
+ 
+.carousel-control-prev-icon {
+    background-color: #636363;
+    border-radius: 12px;
+    padding: 16px;
+}
+ 
+.carousel-control-next-icon {
+    background-color: #636363;
+    border-radius: 12px;
+}
+ 
+.banner6 {
+    background-image: url(images/main-bg.png);
+    background-size: contain;
+    background-repeat: repeat;
+    text-align: center;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 136px;
+    padding-right: 136px;
+}
+ 
+.banner6 h1 {
+    font-size: 72px;
+    font-family: 'Calistoga', cursive;
+}
+ 
+.banner6 .apv-vid {
+    margin-bottom: 14%;
+}
+ 
+.banner6 .input-data {
+    text-align: left;
+}
+ 
+.banner6 .input-data h2 {
+    font-family: 'Calistoga', cursive;
+    font-size: 38px;
+}
+ 
+.banner6 .input-data input {
+    font-size: 28px;
+    margin: 16px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+}
+ 
+.banner6 input[type="text" i] {
+    padding: 8px 16px;
+}
+ 
+.banner6 .img-right {
+    text-align: right;
+}
+ 
+.banner6 .button-submit {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+.banner6 .button-submit button {
+    padding: 3px;
+    padding-left: 36px;
+    padding-right: 36px;
+    border: 3px solid #6d0d2dc7;
+    border-radius: 0;
+    box-shadow: 0px 0px 13px 3px #6d0d2dc7;
+}
+ 
+.banner-break {
+    background-image: url(images/main-bg.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 11px;
+}
+ 
+.banner7 {
+    background-image: url(images/main-bg.png);
+    background-size: cover;
+    background-repeat: repeat;
+    text-align: center;
+    padding: 70px;
+}
+ 
+.banner7 ul {
+    list-style-type: none;
+}
+ 
+.banner8 {
+    background-image: url(images/home-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+    padding-top: 36px;
+    padding-bottom: 175px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.h1-title {
+  margin-top: 50px;
+}
+
+.banner8 h1 {
+    font-size: 72px;
+    font-family: 'Calistoga', cursive;
+    color: #FFF4D1;
+    letter-spacing: 2px;
+    text-shadow: 2px 1px 5px rgb(0 0 0 / 38%);
+}
+
+.banner8 .glow {
+    color: rgb(2);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+ 
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px, 0 0 20px, 0 0 20px #d88a24, 0 0 20px #d88a24, 0 0 40px #d88a24, 0 0 50px #d88a24, 0 0 60px #d88a24;
+    }
+    to {
+        text-shadow: 0 0 20px, 0 0 20px #c7c7c7, 0 0 30px #c7c7c7, 0 0 40px #c7c7c7, 0 0 50px #c7c7c7, 0 0 60px #c7c7c7, 0 0 70px #c7c7c7;
+    }
+}
+ 
+.banner9 {
+    background-image: url(images/img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 850px;
+}
+ 
+.banner10 {
+    background-image: url(images/main-bg.png);
+    background-size: cover;
+    background-repeat: repeat;
+    padding: 36px;
+    
+    color: black;
+}
+ 
+.banner10 img {
+    width: 90%;
+    height: auto;
+    margin-top: 36px;
+    padding-left: 50px;
+    margin-left: 20px;
+    display: flex;
+    display: center;
+    margin-right: 45px;
+}
+
+
+.banner10 img:hover {
+    color: orange;
+    opacity:0.5;
+    transition: 0.50s;
+    
+    
+}
+.banner10 .text-info h1 {
+    font-size: 50px;
+    font-family: 'Calistoga', cursive;
+    color: #1e2529;
+    margin: 26px;
+    margin-left: 0%;
+}
+ 
+.banner10 .text-info h3, h4 {
+    color: black;
+    margin: 26px;
+    margin-left: 0%;
+}
+ 
+.banner10 .text-info h4 {
+    font-weight: 300;
+}
+ 
+.banner10 .poster-img {
+    box-shadow:  #000000ea;
+}
+ 
+.banner10 .text-qt {
+    padding: 36px;
+    text-align: center;
+    margin-top: 36px;
+}
+ 
+.banner10 .text-qt h1 {
+    font-family: 'Calistoga', cursive;
+    font-size: 72px;
+}
+ 
+.banner11 img{
+    display: block;
+    height: 550px;
+    max-width: 100%;
+    margin-bottom: 0%;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+   
+     
+.banner12 {
+    background-image: url(images/main-bg.png);
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 96px;
+    text-align: center;
+}
+
+.banner12 h1 {
+    font-family: 'Calistoga', cursive;
+    font-size: 50px;
+}
+.banner12 h3 {
+    font-family: 'Calistoga', cursive;
+}
+ 
+.banner12 p {
+    font-weight: 600;
+}
+ 
+.banner13 {
+    background-image: url(images/main-bg.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    padding-top: 50px;
+    padding-bottom: 56px;
+    padding-left: 156px;
+    padding-right: 156px;
+}
+ 
+.banner13 .text-desc .text-h1-1, .text-h1-2 {
+    font-family: 'Calistoga', cursive;
+}
+ 
+.banner13 .text-desc .text-h1-1 {
+    font-size: 72px;
+}
+ 
+.banner13 .text-desc .text-h1-2 {
+    margin-bottom: 68px;
+}
+ 
+.banner13 h4 {
+    margin: 0;
+    margin-top: 2px;
+}
+ 
+.banner14 {
+    background-image: url(images/main-bg.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+ 
+.banner14 .text-desc .desc {
+    padding-top: 36px;
+}
+
+.banner14 p{
+    font-size: 20px;
+}
+.banner15 {
+    background-image: url(images/bg2.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 36px;
+    text-align: center;
+}
+
+.banner15 h1 {
+    font-family: 'Calistoga', cursive;
+}
+
+.banner15 .box {
+    background-color: #fff4d1;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 18px 3px #000000ea;
+    height: 250px;
+}
+
+.banner16 {
+    background-image: url(images/bg-ni-tal.png);
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: right;
+    padding: 36px;
+}
+
+.banner16 img {
+    height: 90%;
+    width: 90%;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 0px;
+    padding: 0px;
+    box-shadow: 0px 0px 18px 3px #000000ea;
+}
+
+.banner16 .col {
+  padding: 0px;
+  margin-top: 35px;
+  margin-left: 0px;
+}
+
+.banner16 .text-desc {
+    padding: 16px;
+}
+
+.banner16 .text-desc h1 {
+    font-family: 'Calistoga', cursive;
+}
+
+.banner16 .text-desc h5 {
+  font-family: 'Poppins';
+  font-size: 24px;
+}
+
+.banner16 .btn-sgdscp:hover {
+    border: 3px solid #e72a2a;
+    box-shadow: 0px 0 15px 2px #e72a2a;
+    color: #fff;
+    background-color: #e72a2a;
+}
+
+.banner16 .btn-sgdscp {
+    padding: 13px;
+    padding-left: 36px;
+    padding-right: 36px;
+    border: 3px solid #e72a2a;
+    border-radius: 0;
+    box-shadow: 0px 0 15px 2px #e72a2a;
+    margin-top: 0px;
+}
+
+.banner17 {
+    background-image: url(images/rhay-1.png);
+    background-size: cover;
+    background-position: center;
+    max-width: 1400px;
+    height: 600px;
+    background-repeat: no-repeat;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    
+}
+
+.text-centered {
+    font-family: 'Calistoga', cursive;
+    font-size: 5vw;
+    font-weight: 700;
+    color: rgb(255, 244, 209);
+    text-shadow: 2px 2px 2px rgb(69, 69, 69);
+    margin-left: 450px;
+  }
+
+  .centered-text {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.3vw;
+    width: 695px;
+    margin-bottom: 10px;
+    bottom: 80px;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 300px;
+  }  
+
+  .tech {
+    color: rgb(255, 22, 22);
+  }
+  
+  .text {
+    color: rgb(249, 189, 8);
+  }
+  
+  .yellow {
+    color: rgb(69, 132, 243);
+  }
+  
+  .acc {
+    color: rgb(80, 132, 100);
+  }
+
+  .centered {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2vw;
+    margin-left: 420px;
+    margin-top: 35px;
+  }
+
+  .num {
+    font-family: 'Poppins', sans-serif;
+    font-size: 6vw;
+    font-weight: 700;
+    margin-left: 360px;
+    color: rgb(249, 189, 8);
+    margin-top: 10px;
+    animation: alternate-reverse;
+  }
+  
+  .num1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 6vw;
+    font-weight: 700;
+    margin-left: 75px;
+    color: rgb(255, 22, 22);
+  }
+  
+  .num2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 6vw;
+    font-weight: 700;
+    margin-left: 80px;
+    color: rgb(69, 132, 243);
+  }
+  
+  .subsub {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 700;
+    margin-left: 345px;
+    color: rgb(128, 108, 108);
+    margin-top: 0px;
+  }
+  
+  .subsub1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 700;
+    margin-left: 20px;
+    color: rgb(128, 108, 108);
+  }
+  
+  .subsub2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 700;
+    margin-left: 20px;
+    color: rgb(128, 108, 108);
+  }
+  
+  .sub-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    width: 450px;
+  }
+
+.banner18 {
+    background-image: url(images/main-bg.png);
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 36px;
+    text-align: center;
+}
+
+.banner18 img {
+    height: 60%;
+    width: 60%;
+    margin: auto;
+}
+
+.seeu
+{
+    font-family: 'Poppins';
+    font-size: 50px;
+}
+
+.banner18 h1 {
+    font-family: 'Calistoga', cursive;
+}
+
+.banner19 {
+    background-image: url(images/main-bg.png);
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 36px;
+    text-align: center;
+}
+
+.banner19 .banner-title {
+    font-family: 'Calistoga', cursive;
+    font-size: 54px;
+    margin-bottom: 36px;
+}
+
+.banner19 .logo-event {
+    border-radius: 50%;
+    height: auto;
+    max-width: 65%;
+    margin: 20px;
+}
+
+.col-style-left {
+    border-top: 4px dashed #c71c47;
+    border-right: 4px dashed #f3c33e;
+    border-bottom: 4px dashed #2a92e7;
+}
+
+.col-style-right {
+    border-left: 4px dashed #5a9646;
+}
+
+.col-style-end {
+    border-bottom: 4px dashed #c71c47;
+}
+
+.banner19 .box {
+    padding: 16px;
+}
+
+.banner19 .box-title-left {
+    font-family: 'Calistoga', cursive;
+    border-top-right-radius: 36px;
+    border-bottom-right-radius: 36px;
+    background-color: #f3c33e;
+    color: white;
+}
+
+.banner19 .box-title-right {
+    font-family: 'Calistoga', cursive;
+    border-top-left-radius: 36px;
+    border-bottom-left-radius: 36px;
+    background-color: #f3c33e;
+    color: white;
+}
+
+.banner19 .box-title-right h1 {
+    font-size: 26px;
+    margin-top: 26px;
+}
+
+.banner19 .box-title-left h1 {
+    font-size: 26px;
+    margin-top: 26px;
+}
+
+.banner19 .left-svg img {
+    max-width: 90px;
+    padding-right: 12px;
+    height: auto;
+}
+
+.banner19 .right-svg img {
+    max-width: 90px;
+    padding-right: 12px;
+    height: auto;
+}
+
+.banner19 .left-svg {
+    background-color: black;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+
+.banner19 .right-svg {
+    background-color: black;
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+}
+
+.banner19 .box-content {
+    margin-top: 56px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1vw;
+}
+
+.gdsc 
+{
+    font-family: 'Calistoga';
+    font-size: 1.9vw;
+    font-weight: 200;
+    text-align: center;
+    padding: 20px;
+    border-left: 30px;
+    border-right: 30px;
+}
+
+/*KATH*/
+.banner20 {
+    background-image: url(images/kath-9.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 36px;
+    text-align: center;
+}
+
+.banner20 h1 {
+    font-family: 'Calistoga', cursive;
+}
+
+.banner20 img {
+    height: 100%;
+    width: 40%;
+}
+
+.banner20 h3 {
+    margin: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+.banner21 {
+    background-image: url(images\kath-9.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 36px;
+    text-align: center;
+}
+
+.banner21 img {
+    height: 100%;
+    width: 100%;
+}
+
+.banner22 {
+    background-image: url(images/team/team-bg.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 36px;
+    text-align: center;
+}
+
+.banner22 img {
+    height: 100%;
+    width: 100%;
+}
+
+/*KATH*/
+.content1{
+    background-image: url(images/main-bg.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 36px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.mem0 img:hover {
+    transform: translateY(0) scale(1.1);
+    transition: .5s;
+}
+
+.mem1 img:hover {
+    transform: translateY(0) scale(1.1);
+    transition: .5s;
+}
+
+.mem2 img:hover {
+    transform: translateY(0) scale(1.1);
+    transition: .5s;
+}
+
+.mem3 img:hover {
+    transform: translateY(0) scale(1.1);
+    transition: .5s;
+}
+
+.mem4 img:hover {
+    transform: translateY(0) scale(1.1);
+    transition: .5s;
+}
+
+.mem5 img:hover {
+    transform: translateY(0) scale(1.1);
+    transition: .5s;
+}
+
+.mem0{
+    display: inline-block;
+    padding:0px;
+}
+
+.imem0{
+    height: 700px;
+}
+
+.pmem0{
+    color: #f9bd08;
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+    font-size: 40px;
+}
+
+.pmem0-chief{
+    display: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.mem1{
+    display: inline-block;
+}
+.imem1{
+    height: 700px;
+}
+.pmem1{
+    color: #4584f3;
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+    font-size: 40px;
+}
+.pmem1-chief{
+    display: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.content2{
+    background-image: url(images/main-bg.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 36px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.mem2{
+    flex-direction: column;
+    display: inline-block;
+}
+.imem2{
+    height: 700px;
+}
+.pmem2{
+    color: #508464;
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+    font-size: 40px;
+}
+.pmem2-chief{
+    display: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.content3{
+    background-image: url(images/main-bg.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 36px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.mem3 {
+    display: inline-block;
+}
+.imem3{
+    height: 700px;
+}
+.pmem3{
+    color: #f9bd08;
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+    font-size: 40px;
+}
+.pmem3-chief{
+    display: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.mem4{
+    flex-direction: column;
+    display: inline-block;
+}
+.imem4{
+    height: 700px;
+
+}
+.pmem4{
+    color: #ff1616;
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+    font-size: 40px;
+}
+.pmem4-chief{
+    display: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.mem5{
+    display: inline-block;
+}
+.imem5{
+    height: 700px;
+}
+.pmem5{
+    color: #4584f3;
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+    font-size: 40px;
+}
+.pmem5-chief{
+    display: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+/*end*/
+
+/*team behind the website*/
+.banner23 {
+    background-image: url(images/main-bg.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 16px;
+}
+
+.banner23 img {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.banner23 .text-desc h1 {
+    font-family: 'Calistoga', cursive;
+    font-size: 84px;
+    margin-top: 30%;
+}
+
+.banner23 .text-desc h2 {
+    font-family: 'Calistoga', cursive;
+    font-size: 84px;
+}
+
+.banner7 li a {
+    text-decoration: none;
+    color: black;
+}
+
+.banner25 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+@font-face {
+    font-family: Exo;
+    src: url(./fonts/Exo2.0-Medium.otf);
+}
+.main{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff4d1;
+}
+.profile-card{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+    margin: 0 25px;
+}
+.profile-card:hover{
+    border-radius: 10px;
+    height: 260px;
+}
+.profile-card .img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+    z-index: 99;
+}
+.profile-card:hover .img{
+    transform: translateY(-60px);
+}
+.img img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+}
+.profile-card:hover img{
+    border-radius: 10px;
+}
+.caption{
+    text-align: center;
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: .6s;
+}
+.profile-card:hover .caption{
+    opacity: 1;
+}
+.caption h3{
+    font-size: 21px;
+}
+.caption p{
+    font-size: 16px;
+    margin: 2px 0 9px 0;
+}
+.caption .social-links a{
+    color: #333;
+    margin-right: 8px;
+    font-size: 21px;
+    transition: .6s;
+}
+.social-links a:hover{
+    color: #0c52a1;
+}
+    
